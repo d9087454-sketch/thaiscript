@@ -222,6 +222,7 @@ footer a{color:var(--gold-light)}
     <ul class="nav-links">
       <li><a href="#lessons">Lessons</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-ctas">
       <button class="btn btn-gold" onclick="openModal('upgrade')" id="nav-pro-btn">✦ Get Pro Access</button>
@@ -487,17 +488,48 @@ footer a{color:var(--gold-light)}
 </section>
 
 <!-- FOOTER -->
+<!-- CONTACT SECTION -->
+<section id="contact" style="background:var(--white);padding:3rem 1.25rem;border-top:1px solid var(--gray-200);text-align:center">
+  <div style="max-width:600px;margin:0 auto">
+    <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:.5rem">Contact Us</h2>
+    <p style="color:var(--gray-600);margin-bottom:2rem;font-size:.95rem">Have a question, suggestion, or need help with your Pro access? We're here to help!</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:2rem">
+      <div style="padding:1.25rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);background:var(--gray-50)">
+        <div style="font-size:1.5rem;margin-bottom:.5rem">📧</div>
+        <div style="font-weight:600;font-size:.9rem;margin-bottom:.25rem">Email Us</div>
+        <a href="mailto:d9087454@gmail.com" style="font-size:.82rem;color:var(--teal)">d9087454@gmail.com</a>
+      </div>
+      <div style="padding:1.25rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);background:var(--gray-50)">
+        <div style="font-size:1.5rem;margin-bottom:.5rem">🛒</div>
+        <div style="font-weight:600;font-size:.9rem;margin-bottom:.25rem">Our Store</div>
+        <a href="https://scriptthai.gumroad.com" target="_blank" style="font-size:.82rem;color:var(--teal)">scriptthai.gumroad.com</a>
+      </div>
+      <div style="padding:1.25rem;border:1px solid var(--gray-200);border-radius:var(--radius-lg);background:var(--gray-50)">
+        <div style="font-size:1.5rem;margin-bottom:.5rem">⏱️</div>
+        <div style="font-weight:600;font-size:.9rem;margin-bottom:.25rem">Response Time</div>
+        <div style="font-size:.82rem;color:var(--gray-600)">Within 24 hours</div>
+      </div>
+    </div>
+    <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.25rem;text-align:left">
+      <div style="font-weight:600;font-size:.9rem;margin-bottom:.5rem">📬 Lost your unlock code?</div>
+      <div style="font-size:.85rem;color:var(--gray-600);line-height:1.7">Email us with your Gumroad order number and we'll resend your code within 24 hours. Make sure to check your spam folder first!</div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-inner">
     <h3>🇹🇭 ThaiScript</h3>
     <p>The fastest way to learn Thai — built for travelers, expats, and language lovers in Thailand.</p>
-    <p style="font-size:.8rem">Questions? <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p style="font-size:.8rem">Questions? <a href="mailto:d9087454@gmail.com">d9087454@gmail.com</a></p>
     <div class="footer-links">
       <a href="#lessons">Lessons</a>
       <a href="#pricing">Pricing</a>
-      <a href="mailto:hello@example.com">Contact</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="openModal('privacy');return false">Privacy Policy</a>
+      <a href="#" onclick="openModal('terms');return false">Terms of Use</a>
     </div>
-    <div style="margin-top:1.5rem;font-size:.75rem;opacity:.4">© 2025 ThaiScript · All rights reserved</div>
+    <div style="margin-top:1.5rem;font-size:.75rem;opacity:.4">© 2025 ThaiScript · All rights reserved · Bangkok, Thailand</div>
   </div>
 </footer>
 
@@ -541,7 +573,49 @@ footer a{color:var(--gold-light)}
   </div>
 </div>
 
-<script>
+<!-- PRIVACY POLICY MODAL -->
+<div class="modal-bg" id="modal-privacy" onclick="closeModalBg(event,'modal-privacy')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-privacy')">✕</button>
+    <h2>Privacy Policy</h2>
+    <p style="font-size:.75rem;color:var(--gray-400)">Last updated: May 2025</p>
+    <div style="font-size:.85rem;color:var(--gray-600);line-height:1.8;margin-top:1rem">
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">1. Information We Collect</p>
+      <p style="margin-bottom:1rem">ThaiScript does not collect personal information unless you voluntarily provide it (such as your email when contacting us). We use Google Analytics to track anonymous visitor data including page views, location, and device type to improve our service.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">2. Google AdSense & Cookies</p>
+      <p style="margin-bottom:1rem">We use Google AdSense to display advertisements. Google uses cookies to serve ads based on your prior visits to our website or other websites. You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" style="color:var(--teal)">Google Ads Settings</a>.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">3. Payments</p>
+      <p style="margin-bottom:1rem">All payments are processed securely by Gumroad. We do not store your payment information. Please review <a href="https://gumroad.com/privacy" target="_blank" style="color:var(--teal)">Gumroad's Privacy Policy</a> for details.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">4. Local Storage</p>
+      <p style="margin-bottom:1rem">We use your browser's local storage to save your Pro access status and learning progress. This data stays on your device and is never sent to our servers.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">5. Contact</p>
+      <p>For any privacy questions, email us at <a href="mailto:d9087454@gmail.com" style="color:var(--teal)">d9087454@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS OF USE MODAL -->
+<div class="modal-bg" id="modal-terms" onclick="closeModalBg(event,'modal-terms')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-terms')">✕</button>
+    <h2>Terms of Use</h2>
+    <p style="font-size:.75rem;color:var(--gray-400)">Last updated: May 2025</p>
+    <div style="font-size:.85rem;color:var(--gray-600);line-height:1.8;margin-top:1rem">
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">1. Acceptance</p>
+      <p style="margin-bottom:1rem">By using ThaiScript, you agree to these terms. If you do not agree, please do not use our service.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">2. Free & Pro Access</p>
+      <p style="margin-bottom:1rem">Free content is available to all users. Pro content requires a one-time or monthly payment. Unlock codes are for personal use only and must not be shared publicly.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">3. Refund Policy</p>
+      <p style="margin-bottom:1rem">We offer a 7-day refund policy. If you are not satisfied with your Pro purchase, contact us within 7 days at d9087454@gmail.com with your order number for a full refund.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">4. Content Accuracy</p>
+      <p style="margin-bottom:1rem">We strive to provide accurate Thai language content. However, we recommend supplementing your learning with native speakers and formal language courses.</p>
+      <p style="font-weight:600;color:var(--gray-900);margin-bottom:.5rem">5. Contact</p>
+      <p>Questions? Email <a href="mailto:d9087454@gmail.com" style="color:var(--teal)">d9087454@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+
 // ================================================================
 //  ⚙️ YOUR CONFIGURATION — edit these
 // ================================================================
